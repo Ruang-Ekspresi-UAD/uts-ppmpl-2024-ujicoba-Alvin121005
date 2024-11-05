@@ -1,19 +1,73 @@
 body {
-    background-color: rgba(33, 221, 90, 0.603);
-    font-family: Arial, sans-serif;
-    margin: 20px;
+    background-color: #f0f4f8; /* Light background for better contrast */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark text for better readability */
 }
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(33, 150, 243, 0.8); /* Semi-transparent blue */
+    color: white; /* White text for header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 img {
     display: block;
     margin: 20px auto;
     border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
-/* Existing styles... */
 
-/* Responsive Layout */
+main {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white; /* White background for main content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for main content */
+}
+
+section {
+    margin-bottom: 40px; /* Spacing between sections */
+}
+
+h2 {
+    color: #2D76F9; /* Section title color */
+    border-bottom: 2px solid #2D76F9; /* Underline for section titles */
+    padding-bottom: 5px; /* Spacing below section titles */
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Change to relative for normal positioning */
+    bottom: 0;
+    width: 100%;
+}
+
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Stack nav items vertically */
+        text-align: center; /* Center align nav items */
     }
 
     nav ul li {
@@ -21,19 +75,10 @@ img {
     }
 
     img {
-        width: 150px;
+        width: 150px; /* Smaller profile picture on mobile */
     }
 
-    body {
-        margin: 10px;
+    main {
+        padding: 10px; /* Less padding on mobile */
     }
-}
-footer {
-   
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
